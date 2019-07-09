@@ -30,8 +30,6 @@ class YoulaiSpider(scrapy.Spider):
         # print(question)
         # print(answer)
         if question!="未爬到" and answer!="未爬到":
-            out_file.write(question)
-            out_file.write("\n")
-            out_file.write(answer)
+            out_file.write(question+"|||"+answer)
             out_file.write("\n")
             out_file.flush()
